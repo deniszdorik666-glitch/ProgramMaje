@@ -179,4 +179,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginLeft: 10,
   },
+  versionText: {
+    fontSize: 11,
+    color: '#444',
+    textAlign: 'center',
+    marginTop: 15,
+  },
 });
