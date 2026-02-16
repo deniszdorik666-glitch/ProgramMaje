@@ -14,6 +14,7 @@ import Slider from '@react-native-community/slider';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const QUALITY_OPTIONS = ['минимум', 'стандарт', 'высоко', 'очень высоко', 'ультра'];
+const APP_VERSION = '1.0.0';
 
 export default function SettingsScreen() {
   const [showGraphics, setShowGraphics] = useState(false);
