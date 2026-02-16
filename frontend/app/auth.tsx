@@ -35,16 +35,16 @@ export default function AuthScreen() {
 
   const validatePassword = (value: string): string[] => {
     const errors: string[] = [];
-    if (value.length < 20) {
-      errors.push(`Минимум 20 символов (сейчас: ${value.length})`);
+    if (value.length < 6) {
+      errors.push(`Минимум 6 символов (сейчас: ${value.length})`);
     }
     const upperCount = (value.match(/[A-Z]/g) || []).length;
-    if (upperCount < 2) {
-      errors.push(`Минимум 2 заглавные буквы (сейчас: ${upperCount})`);
+    if (upperCount < 1) {
+      errors.push(`Минимум 1 заглавная буква (сейчас: ${upperCount})`);
     }
     const digitCount = (value.match(/[0-9]/g) || []).length;
-    if (digitCount < 5) {
-      errors.push(`Минимум 5 цифр (сейчас: ${digitCount})`);
+    if (digitCount < 2) {
+      errors.push(`Минимум 2 цифры (сейчас: ${digitCount})`);
     }
     const specialCount = (value.match(/[!@#$%^&*(),.?":{}|<>_\-+=\[\]\\/'`;~]/g) || []).length;
     if (specialCount < 2) {
@@ -147,7 +147,6 @@ export default function AuthScreen() {
             resizeMode="contain"
           />
           
-          <Text style={styles.title}>MAJESTIC RP</Text>
           <Text style={styles.subtitle}>Лаунчер</Text>
 
           <View style={styles.tabContainer}>
@@ -218,9 +217,9 @@ export default function AuthScreen() {
             {mode === 'register' && (
               <View style={styles.passwordHints}>
                 <Text style={styles.hintTitle}>Требования к паролю:</Text>
-                <Text style={styles.hintText}>• Минимум 20 символов</Text>
-                <Text style={styles.hintText}>• Минимум 2 заглавные буквы</Text>
-                <Text style={styles.hintText}>• Минимум 5 цифр</Text>
+                <Text style={styles.hintText}>• Минимум 6 символов</Text>
+                <Text style={styles.hintText}>• Минимум 1 заглавная буква</Text>
+                <Text style={styles.hintText}>• Минимум 2 цифры</Text>
                 <Text style={styles.hintText}>• Минимум 2 спецсимвола</Text>
               </View>
             )}
