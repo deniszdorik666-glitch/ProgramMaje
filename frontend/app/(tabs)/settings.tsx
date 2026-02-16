@@ -672,4 +672,11 @@ const styles = StyleSheet.create({
   cancelDownloadButton: {
     backgroundColor: '#ff4444',
   },
+  versionText: {
+    fontSize: 11,
+    color: '#444',
+    textAlign: 'center',
+    marginTop: 30,
+    marginBottom: 10,
+  },
 });
