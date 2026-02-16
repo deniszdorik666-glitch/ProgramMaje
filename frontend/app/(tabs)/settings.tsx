@@ -219,6 +219,8 @@ export default function SettingsScreen() {
           <Text style={styles.menuText}>Скачать GTA V</Text>
           <Ionicons name="chevron-forward" size={24} color="#666" />
         </TouchableOpacity>
+
+        <Text style={styles.versionText}>v{APP_VERSION}</Text>
       </ScrollView>
 
       {/* Graphics Modal */}
