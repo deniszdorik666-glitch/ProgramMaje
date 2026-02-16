@@ -11,6 +11,8 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 
+const APP_VERSION = '1.0.0';
+
 export default function HomeScreen() {
   const handleResourcePress = () => {
     Alert.alert('Недоступно', 'Пока не доступно');
@@ -25,8 +27,8 @@ export default function HomeScreen() {
           resizeMode="contain"
         />
         
-        <Text style={styles.title}>MAJESTIC RP</Text>
         <Text style={styles.subtitle}>GTA 5 Roleplay Project</Text>
+        <Text style={styles.byText}>by derol</Text>
 
         <View style={styles.descriptionContainer}>
           <Text style={styles.emoji}>🚗</Text>
