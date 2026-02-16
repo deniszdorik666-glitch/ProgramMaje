@@ -87,6 +87,8 @@ export default function HomeScreen() {
             <Text style={styles.resourceText}>Instagram</Text>
           </TouchableOpacity>
         </View>
+
+        <Text style={styles.versionText}>v{APP_VERSION}</Text>
       </ScrollView>
     </SafeAreaView>
   );
