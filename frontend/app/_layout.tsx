@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { AuthContext } from '../context/AuthContext';
+import { AuthContext } from '../src/context/AuthContext';
 
 export default function RootLayout() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
