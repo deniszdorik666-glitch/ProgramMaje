@@ -77,6 +77,8 @@ export default function AccountScreen() {
         <Ionicons name="log-out" size={24} color="#fff" />
         <Text style={styles.logoutText}>Выйти из аккаунта</Text>
       </TouchableOpacity>
+
+      <Text style={styles.versionText}>v{APP_VERSION}</Text>
     </SafeAreaView>
   );
 }
