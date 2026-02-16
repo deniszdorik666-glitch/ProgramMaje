@@ -10,6 +10,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useAuth } from '../../src/context/AuthContext';
 
+const APP_VERSION = '1.0.0';
+
 export default function AccountScreen() {
   const { currentUser, logout } = useAuth();
 
