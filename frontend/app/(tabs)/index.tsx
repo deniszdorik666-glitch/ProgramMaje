@@ -195,4 +195,15 @@ const styles = StyleSheet.create({
     marginTop: 8,
     fontSize: 14,
   },
+  byText: {
+    fontSize: 12,
+    color: '#666',
+    marginBottom: 20,
+  },
+  versionText: {
+    fontSize: 11,
+    color: '#444',
+    marginTop: 20,
+    marginBottom: 10,
+  },
 });
