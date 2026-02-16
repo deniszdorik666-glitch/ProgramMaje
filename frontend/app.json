@@ -4,8 +4,8 @@
     "slug": "majestic-rp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "frontend",
+    "icon": "./assets/images/majestic-logo.png",
+    "scheme": "majesticrp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
